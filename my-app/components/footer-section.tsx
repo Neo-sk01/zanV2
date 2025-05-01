@@ -1,6 +1,5 @@
 "use client"
 
-import { Logo } from '@/components/logo'
 import Link from 'next/link'
 
 const links = [
@@ -38,7 +37,7 @@ export default function FooterSection() {
                     href="/"
                     aria-label="go home"
                     className="mx-auto block size-fit scale-90">
-                    <Logo />
+                    {/* Logo removed */}
                 </Link>
 
                 <div className="my-4 flex flex-wrap justify-center gap-4 text-xs">

@@ -3,7 +3,6 @@
 import * as React from 'react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Logo } from '@/components/logo'
 import { Button } from '@/components/ui/button'
 
 export function HeroHeader() {
@@ -42,10 +41,10 @@ export function HeroHeader() {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="mx-auto flex h-[136px] w-full max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-16 md:h-24 w-full max-w-6xl items-center justify-between px-6">
         <div>
           <Link href="/">
-            <Logo />
+            {/* Logo removed */}
           </Link>
         </div>
         <nav className="hidden gap-6 md:flex">
